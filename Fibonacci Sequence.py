@@ -18,8 +18,8 @@ for x in range(n):
     s = a+b
     b = a
     a = s
-plt.xlim(0, 25)
-plt.ylim(0,300)
+plt.xlim(0, 20)
+plt.ylim(0,2500)
 plt.plot(fibseq, color='red')
 plt.xlabel('Index')
 plt.ylabel('Fibonacci Bumber')
