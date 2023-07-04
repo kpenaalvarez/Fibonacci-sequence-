@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jul  3 17:52:24 2023
+
+@author: kpenaalvarez
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# define a function that conputes n+1 st fibonnaci, given 
+# thhe previous two fibonnaci numbers
+
+def aliens(F, n):
+    """
+    
+
+    Parameters
+    ----------
+    F : integer array
+        F[n] is the n-th Fibonacci number
+    n : integer
+        index into F
+
+    Returns
+    -------
+
+    """
+    F[n+1] = F[n] + F[n-1]
+    return F
+
+F = np.zeros(100)
+F[0] = 0
+F[1] = 1
+
+for n in range(2, 99):
+    F[n] = aliens(F, n)
