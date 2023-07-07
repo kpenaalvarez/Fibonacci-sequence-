@@ -63,7 +63,5 @@ if __name__=="__main__":
 
         d = F
         plt.plot(d,'.')
-        d =[]
-        for i in range(1, 20):
-            d.append(F[1+i]/F[i])
+  
         
